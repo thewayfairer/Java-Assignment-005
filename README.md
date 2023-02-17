@@ -37,7 +37,7 @@ Part 3 is all about learning how to use the **switch** conditional statement, or
 
 ## Part 4: Pull Request
 Part 4, as usual, is repetition of duties you will be doing in industry.
-* Make sure to use the Git tab at the bottom of IntelliJ to create a Fall_2022 feature branch
+* Make sure to use the Git tab at the bottom of IntelliJ to create a Sprint2023 feature branch
 * Commit and Push your running code back to your GitHub account
 * Issue a Pull request back to my Java-Assignment-005 repo
 * Cut and Paste the Pull request URL into your Canvas assignment to turn it in.
