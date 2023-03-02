@@ -1,0 +1,67 @@
+Method names:
+
+convertC2F
+convertC2K
+convertF2C
+convertF2K
+convertK2C
+getTemp
+getUnitChoice
+main
+Variables:
+
+input (a static final Scanner object)
+Method convertF2K breakdown:
+
+Access modifier: public
+Type: static method
+Return type: double
+Parameters:
+fahrenheit (data type: double)
+Description:
+The method takes in a Fahrenheit temperature as a parameter and returns the equivalent temperature in Kelvin. It calls the convertF2C method with the Fahrenheit temperature as an argument, then calls the convertC2K method with the Celsius temperature as an argument, and returns the result.
+Flow of execution:
+
+The method takes in a Fahrenheit temperature as a parameter.
+It calls the convertF2C method with the Fahrenheit temperature as an argument, which returns the Celsius temperature equivalent.
+It then calls the convertC2K method with the Celsius temperature as an argument, which returns the Kelvin temperature equivalent.
+Finally, it returns the Kelvin temperature.
+Method getUnitChoice breakdown:
+
+Access modifier: public
+Type: static method
+Return type: String
+Parameters: none
+Description:
+The method displays a set of choices for the user to select from (C, F, K, or Q) and prompts the user to enter a choice. It returns the user's choice as a string.
+Flow of execution:
+
+The method displays a set of choices for the user to select from and prompts the user to enter a choice.
+It reads in the user's input using the input.nextLine() method and returns it as a string.
+Format specifiers are used to format output in a specific way, such as aligning text to the left or right, specifying the number of decimal places, or padding with leading zeros. In this code, the printf method is used with format specifiers to display the choices for the user to select from in a formatted manner. The %n specifier is used to insert a newline character.
+
+Step 2
+
+
+Since we have the other conversion methods already defined, we can make use of them to implement convertK2F in terms of those other methods. Here's one way to do it:
+
+public static double convertK2F(double kelvin) {
+    double celsius = convertK2C(kelvin);
+    double fahrenheit = convertC2F(celsius);
+    return fahrenheit;
+}
+Explanation:
+
+Access modifier: public
+Type: static method
+Return type: double
+Parameters:
+kelvin (data type: double)
+Description:
+The method takes in a Kelvin temperature as a parameter and returns the equivalent temperature in Fahrenheit. It first converts the Kelvin temperature to Celsius using the convertK2C method, then converts the Celsius temperature to Fahrenheit using the convertC2F method, and returns the result.
+Flow of execution:
+
+The method takes in a Kelvin temperature as a parameter.
+It calls the convertK2C method with the Kelvin temperature as an argument, which returns the Celsius temperature equivalent.
+It then calls the convertC2F method with the Celsius temperature as an argument, which returns the Fahrenheit temperature equivalent.
+Finally, it returns the Fahrenheit temperature.
